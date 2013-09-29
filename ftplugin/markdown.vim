@@ -25,9 +25,12 @@ let s:markdown_ctags = expand('<sfile>:p:h:h') . '/ctags/markdown.cnf'
 let g:tagbar_type_markdown = {
 	  \ 'ctagstype' : 'markdown',
 	  \ 'kinds' : [
-	  \   'h:Heading_L1',
-	  \   'i:Heading_L2',
-	  \   'k:Heading_L3',
+	  \   'h:H1',
+	  \   'i:H2',
+	  \   'j:H3',
+	  \   'k:H4',
+	  \   'l:H5',
+	  \   'm:H6',
 	  \ ],
 	  \ 'sort' : 0,
 	  \ 'deffile' : s:markdown_ctags,
