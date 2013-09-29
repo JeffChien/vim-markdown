@@ -18,4 +18,7 @@ else
   let b:undo_ftplugin = "setl cms< com< fo< flp<"
 endif
 
+if has('conceal')
+  set conceallevel=2
+endif
 " vim:set sw=2:
