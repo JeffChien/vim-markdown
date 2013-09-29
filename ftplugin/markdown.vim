@@ -18,4 +18,14 @@ else
   let b:undo_ftplugin = "setl cms< com< fo< flp<"
 endif
 
+noremap <script> <buffer> <silent> ]]
+      \ :call markdown#next_section(0, 0)<cr>
+noremap <script> <buffer> <silent> ]]
+      \ :call markdown#next_section(0, 0)<cr>
+vnoremap <script> <buffer> <silent> [[
+      \ :call markdown#next_section(1, 1)<cr>
+vnoremap <script> <buffer> <silent> ]]
+      \ :call markdown#next_section(0, 1)<cr>
+
+
 " vim:set sw=2:
