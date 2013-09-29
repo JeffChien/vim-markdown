@@ -18,4 +18,17 @@ else
   let b:undo_ftplugin = "setl cms< com< fo< flp<"
 endif
 
+" tagbar support, since 'loaded_tagbar' variable is set in autoload,
+" there is no way to detect if tabar is exist or not
+let g:tagbar_type_markdown = {
+	  \ 'ctagstype' : 'markdown',
+	  \ 'kinds' : [
+	  \   'h:Heading_L1',
+	  \   'i:Heading_L2',
+	  \   'k:Heading_L3',
+	  \ ],
+	  \ 'sort' : 0,
+	  \ 'deffile' : expand('<sfile>:p:h:h') . '/ctags/markdown.cnf',
+  \ }
+
 " vim:set sw=2:
